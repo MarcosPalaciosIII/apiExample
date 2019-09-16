@@ -1,12 +1,7 @@
-<h2> {{pokes.name}} Details </h2>
+<h2>API Home Page</h2>
 
-
-
-
-{{#if loadedInfo}}
-  <h4>Is True</h4>
-  <img class="pokeImg" src="{{pokes.sprites.front_shiny}}" alt="{{pokes.name}} pic front shiny view">
-{{else}}
-  <h4>Is False</h4>
-  <img class="pokeImg" src="{{pokes.sprites.front_default}}" alt="{{pokes.name}} pic front view">
-{{/if}}
+<div class="allPokesFromAPI">
+  {{#each allThePokemon}}
+  <a class="pokeFromAllPokesLink" href="/api/poke/{{@index}}">{{this.name}}</a>
+  {{/each}}
+</div>

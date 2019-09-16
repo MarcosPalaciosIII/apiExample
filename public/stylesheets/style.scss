@@ -12,3 +12,16 @@ nav a {
 .pokeImg {
   height: 20vh;
 }
+
+.allPokesFromAPI {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 1.7rem;
+}
+
+.pokeFromAllPokesLink {
+  font-size: 1rem;
+  margin-right: 3vw;
+}
