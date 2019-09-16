@@ -1,0 +1,12 @@
+<h2> {{pokes.name}} Details </h2>
+
+
+
+
+{{#if isSaur}}
+<h4>Is True</h4>
+<img class="pokeImg" src="{{pokes.sprites.front_shiny}}" alt="{{pokes.name}} pic front shiny view">
+{{else}}
+<h4>Is False</h4>
+<img class="pokeImg" src="{{pokes.sprites.front_default}}" alt="{{pokes.name}} pic front view">
+{{/if}}
